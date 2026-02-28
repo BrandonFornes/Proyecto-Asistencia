@@ -11,7 +11,7 @@ import * as FileSystem from 'expo-file-system';
 import { Ionicons } from '@expo/vector-icons';
 
 // ── CONFIGURA LA IP DE TU COMPUTADORA AQUÍ ─────────────────────────────────
-const API_URL = 'http://192.168.56.1:8000'; // ← Cambia esto
+const API_URL = 'http://192.168.0.103:8000'; // ← Cambia esto
 // ────────────────────────────────────────────────────────────────────────────
 
 const COLORS = {
