@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "AsistenciaFace",
+    "slug": "asistencia-face",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0D1B2A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.tuescuela.asistenciaface",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Necesario para tomar fotos del grupo y pasar asistencia.",
+        "NSPhotoLibraryUsageDescription": "Necesario para importar fotos de alumnos desde la galería."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0D1B2A"
+      },
+      "package": "com.tuescuela.asistenciaface",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Necesitamos acceso a tus fotos para registrar alumnos.",
+          "cameraPermission": "Necesitamos la cámara para pasar asistencia."
+        }
+      ]
+    ]
+  }
+}
